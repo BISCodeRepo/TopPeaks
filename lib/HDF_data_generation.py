@@ -12,8 +12,9 @@ start = time.time()
 isBin = False ## Binning model was deprecated since 2023. 10.
 isTop = True
 N = 30
+file_path = "xxx.hdf5"
 
-with h5py.File("holdout_hcd_bin100.hdf5", 'r+') as data_set:
+with h5py.File(file_path, 'r+') as data_set:
     
     size = len(data_set['intensities_raw'])
     
